@@ -80,7 +80,7 @@ sudo systemctl stop squeezelite.service | tee -a ${FILENAME}
 sudo systemctl disable squeezelite | tee -a ${FILENAME}
 
 if [ -e ${LBPDATA}/${pluginname}/squeezelite ]; then
-	newversinstall=`${LBPDATA}/${pluginname}/squeezelite -? | grep "Squeezelite v" | awk '{print $2}' | cut -d "v" -f2 | cut -d "," -f1`
+	newversinstall=`${LBPDATA}/${pluginname}/squeezelite -? | grep "Ralph Irving" | awk '{print $2}' | cut -d "v" -f2 | cut -d "," -f1`
 fi
 
 if [[ $newversinstall == $versonline ]]; then
