@@ -27,7 +27,7 @@ if [[ $1 == "current" || $1 == "" ]]; then
 		else
 			SQUEEZEBIN=`which squeezelite`
 		fi
-		versinstall=`$SQUEEZEBIN -? | grep "Squeezelite v" | awk '{print $2}' | cut -d "v" -f2 | cut -d "," -f1`
+		versinstall=`$SQUEEZEBIN -? | grep "Ralph Irving" | awk '{print $2}' | cut -d "v" -f2 | cut -d "," -f1`
 	fi
 	if [[ $1 != "" ]]; then
 		echo -n "$versinstall"
